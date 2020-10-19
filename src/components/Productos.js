@@ -3,7 +3,7 @@ import Producto from './Producto';
 
 // redux
 import {useSelector, useDispatch} from 'react-redux';
-import {obtenerProductosAction} from '../actions/productoActions';
+import {obtenerProductosAction, obtenerProductoEditar} from '../actions/productoActions';
 
 const Productos = () => {
 
