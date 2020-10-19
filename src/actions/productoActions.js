@@ -102,7 +102,8 @@ export function borrarProductoAction(id) {
             await clienteAxios.delete(`/productos/${id}`);
             dispatch(eliminarProductoExito());
         } catch (error) {
-            
+            console.log(error);
+            dispatch(eliminarProductoError());
         }
 
     }
