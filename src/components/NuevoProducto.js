@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 
 // actions de redux
 import {crearNuevoProductoAction} from '../actions/productoActions';
-import {mostrarAlerta} from '../actions/alertaActions';
+import {mostrarAlerta, ocultarAlertaAction} from '../actions/alertaActions';
 
 const NuevoProducto = ({history}) => {
 
@@ -38,6 +38,7 @@ const NuevoProducto = ({history}) => {
         }
 
         // si no hay errores
+        dispatch(ocultarAlertaAction());
 
         // crear nuevo producto
         agregarProducto({
@@ -59,7 +60,7 @@ const NuevoProducto = ({history}) => {
                         </h2>
 
                         {alerta ? <p className={alerta.classes}> {alerta.msg} </p> : null}
-                        
+
                         <form
                             onSubmit={submitNuevoProducto}
                         >
