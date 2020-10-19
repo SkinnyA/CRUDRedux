@@ -116,3 +116,8 @@ const obtenerProductoEliminar = id => ({
 const eliminarProductoExito = () => ({
     type: PRODUCTO_ELIMINADO_EXITO
 });
+
+const eliminarProductoError = () => ({
+    type: PRODUCTO_ELIMINADO_ERROR,
+    payload: true
+});
