@@ -39,6 +39,16 @@
       "nombre": "test",
       "precio": 3,
       "id": 8
+    },
+    {
+      "nombre": "test",
+      "precio": 3333,
+      "id": 9
+    },
+    {
+      "nombre": "asd",
+      "precio": 100,
+      "id": 10
     }
   ]
 }
