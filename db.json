@@ -34,6 +34,11 @@
       "nombre": "Test",
       "precio": 1,
       "id": 7
+    },
+    {
+      "nombre": "test",
+      "precio": 3,
+      "id": 8
     }
   ]
 }
